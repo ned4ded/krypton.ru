@@ -1,5 +1,9 @@
+body {
+  min-width: 500px; }
+
 .navbar-brand {
-  padding: 0; }
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .c-home__logo {
   width: auto;
@@ -40,6 +44,13 @@
   margin-bottom: 40px; }
   .features__item p {
     text-align: justify; }
+  @media (max-width: 991px) {
+    .features__item {
+      width: 50%; } }
+  @media (max-width: 767px) {
+    .features__item {
+      width: 100%;
+      max-width: 450px; } }
 
 .jobs__list {
   margin: 0;

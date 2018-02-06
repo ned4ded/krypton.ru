@@ -40,6 +40,15 @@
     & p {
       text-align: justify;
     }
+
+    @media (max-width : 991px) {
+      width: 50%;
+    }
+
+    @media (max-width : 767px) {
+      width: 100%;
+      max-width: 450px;
+    }
   }
 }
 
