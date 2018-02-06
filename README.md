@@ -1,2 +1,2 @@
 # krypton.ru
-krypton landing markup building
+krypton landing markup assembling
