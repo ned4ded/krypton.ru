@@ -18,6 +18,29 @@
   background-repeat: no-repeat;
   background-position: center top; }
 
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.features__item {
+  width: 33.333%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 40px; }
+  .features__item p {
+    text-align: justify; }
+
 .jobs__list {
   margin: 0;
   padding-top: 5px;
@@ -30,6 +53,10 @@
 
 .c-footer {
   padding-bottom: 80px; }
+
+.c-testimonial-cta p {
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .fss-container {
   position: relative;
