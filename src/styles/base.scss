@@ -1,8 +1,42 @@
+@import 'bootfix.scss';
+
 .c-home__logo {
   width: auto;
   max-width: 100%;
   height: auto;
   max-height: 326px;
+
+  &--footer {
+    max-height: 120px;
+  }
+}
+
+.c-features__img {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  height: 270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.jobs {
+  &__list {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  &__block {
+    margin-bottom: 100px;
+  }
+}
+
+.c-footer {
+  padding-bottom: 80px;
 }
 
 .fss-container {
