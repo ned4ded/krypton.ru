@@ -3,3 +3,26 @@
   max-width: 100%;
   height: auto;
   max-height: 326px; }
+
+.fss-container {
+  position: relative;
+  background: #343439; }
+
+.fss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .fss canvas {
+    width: 100%;
+    height: 100%; }
+  .fss:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0) 50%, #343439 90%);
+    width: 100%;
+    height: 100%;
+    content: ''; }
