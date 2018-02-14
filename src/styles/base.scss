@@ -127,6 +127,13 @@
     display: block;
     filter: grayscale(1);
 
+    &:hover {
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: .5;
+    }
 
     &--coingauge {
       filter: grayscale(1) invert(1);

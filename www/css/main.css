@@ -110,6 +110,10 @@ body {
     display: block;
     -webkit-filter: grayscale(1);
             filter: grayscale(1); }
+    .c-client-list__link:hover {
+      opacity: .7; }
+    .c-client-list__link:active {
+      opacity: .5; }
     .c-client-list__link--coingauge {
       -webkit-filter: grayscale(1) invert(1);
               filter: grayscale(1) invert(1); }
