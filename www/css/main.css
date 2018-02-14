@@ -82,6 +82,51 @@ body {
   .jobs__block {
     margin-bottom: 100px; }
 
+.c-client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .c-client-list > li {
+    width: 25%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .c-client-list > li img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 125px; }
+  .c-client-list__link {
+    display: block;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1); }
+    .c-client-list__link--coingauge {
+      -webkit-filter: grayscale(1) invert(1);
+              filter: grayscale(1) invert(1); }
+    .c-client-list__link--ico-admin {
+      -webkit-filter: grayscale(1) invert(1);
+              filter: grayscale(1) invert(1); }
+    .c-client-list__link--krypton-capital {
+      -webkit-filter: grayscale(1) brightness(0);
+              filter: grayscale(1) brightness(0); }
+    .c-client-list__link--cryptopro {
+      -webkit-filter: grayscale(1) brightness(0);
+              filter: grayscale(1) brightness(0); }
+    .c-client-list__link--machine-kitchen {
+      width: 85%;
+      -webkit-filter: grayscale(1) invert(1);
+              filter: grayscale(1) invert(1); }
+
 .c-footer {
   padding-bottom: 80px; }
 
