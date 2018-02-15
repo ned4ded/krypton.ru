@@ -35,8 +35,11 @@
     width: 33.333%;
     padding-right: 10px;
     padding-left: 10px;
-    margin-bottom: 40px;
+
     text-align: center;
+    &:nth-of-type(n + 4) {
+      margin-top: 40px;
+    }
 
     & p {
       text-align: justify;
