@@ -1,5 +1,5 @@
 # krypton.ru
-krypton landing markup assembling
+krypton landing markup assembling; https://krypton.ru/
 
 ## Used
 1. Bootstrap Theme [Metrico](http://coderthemes.com/metrico/):
