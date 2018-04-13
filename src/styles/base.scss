@@ -143,6 +143,10 @@
       opacity: .5;
     }
 
+    &--array {
+      filter: grayscale(1);
+    }
+
     &--coingauge {
       filter: grayscale(1) invert(1);
     }
@@ -158,7 +162,7 @@
     }
     &--machine-kitchen {
       width: 85%;
-      filter: grayscale(1) invert(1);
+      filter: grayscale(1);
     }
 
     @media screen\0 {

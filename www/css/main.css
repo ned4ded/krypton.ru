@@ -119,6 +119,9 @@ body {
       opacity: .7; }
     .c-client-list__link:active {
       opacity: .5; }
+    .c-client-list__link--array {
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1); }
     .c-client-list__link--coingauge {
       -webkit-filter: grayscale(1) invert(1);
               filter: grayscale(1) invert(1); }
@@ -133,8 +136,8 @@ body {
               filter: grayscale(1) brightness(0); }
     .c-client-list__link--machine-kitchen {
       width: 85%;
-      -webkit-filter: grayscale(1) invert(1);
-              filter: grayscale(1) invert(1); }
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1); }
     @media screen\0 {
       .c-client-list__link {
         background-color: lightgrey; } }
