@@ -1,0 +1,156 @@
+.about-us {
+  position: relative;
+
+  @include respond-to(md) {
+    padding-bottom: 25px;
+  }
+
+  &:before {
+    display: block;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: $text-color-orange;
+    position: absolute;
+    bottom: 0;
+    left: -95px;
+    border-radius: 100%;
+
+    @media(max-width: 1440px) {
+      left: -15px;
+    }
+
+    @include respond-to(md) {
+      bottom: 15px;
+    }
+
+    @include respond-to(sm) {
+      left: 15px;
+    }
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: $text-color-orange;
+    position: absolute;
+    bottom: 0;
+    right: -95px;
+    border-radius: 100%;
+
+    @media(max-width: 1440px) {
+      right: -15px;
+    }
+
+    @include respond-to(md) {
+      bottom: 15px;
+    }
+
+    @include respond-to(sm) {
+      right: 15px;
+    }
+  }
+
+  &__heading {
+    padding-top: 240px;
+    margin-bottom: 75px;
+
+    @include respond-to(lg) {
+      padding-top: 0;
+    }
+
+    @include respond-to(md) {
+      text-align: center;
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: $text-color-green-dark;
+    transition: all ease-in .1s;
+
+    &:hover {
+      color: white;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    &--seal {
+      top: -30px;
+      right: -125px;
+      max-width: 343px;
+
+      @media (max-width: 1440px) {
+        right: -60px;
+      }
+
+      @include respond-to(lg) {
+        right: auto;
+        top: auto;
+        margin-top: 65px;
+        margin-left: auto;
+        display: block;
+        margin-right: 20px;
+      }
+
+      @include respond-to(md) {
+        margin: 0 auto 0;
+      }
+    }
+
+    &--logo {
+      display: block;
+      margin: auto;
+      margin: 70px auto 43px;
+      padding-left: 137px;
+      text-align: center;
+
+      @include respond-to(md) {
+        margin: 30px auto 60px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__paragraph {
+    font-family: $ff-circe;
+    font-size: 22.5px;
+    font-weight: 500;
+    color: $text-color-green-dark;
+    line-height: 2;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 100px;
+
+    &-line {
+      display: block;
+
+      @include respond-to(lg) {
+        display: inline-block;
+      }
+    }
+
+  &__logo {
+    display: inline-block;
+    width: auto;
+
+  }
+
+  &__block {
+    text-align: right;
+  }
+
+  }
+}
