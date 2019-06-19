@@ -20,24 +20,6 @@ const rename = require('gulp-rename');
 // Webserver plugins
 const browserSync = require('browser-sync').create();
 
-gulp.task('webserver', ['styles', 'html', 'scripts'], function() {
-  browserSync.init({
-    open: false,
-    ui: false,
-    server: './www',
-    files: './www/index.html',
-    host: '192.168.1.130',
-    port: 3000,
-    reloadOnRestart: true,
-    logConnections: true,
-    ghostMode: false,
-  });
-
-  gulp.watch('./src/styles/**/*.scss', ['styles']);
-  gulp.watch('./src/scripts/**/*.js', ['scripts']);
-  gulp.watch('./src/pages/*.html', ['html']);
-});
-
 gulp.task('styles', function() {
   return gulp.src(__dirname + '/src/styles/base.scss')
     .pipe(sass().on('error', sass.logError))
@@ -68,4 +50,22 @@ gulp.task('html', function() {
           .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['webserver']);
+gulp.task('webserver', gulp.series(['styles', 'html', 'scripts', function () {
+  browserSync.init({
+    open: false,
+    ui: false,
+    server: './www',
+    files: './www/index.html',
+    host: '192.168.1.130',
+    port: 3000,
+    reloadOnRestart: true,
+    logConnections: true,
+    ghostMode: false,
+  });
+
+  gulp.watch('./src/styles/**/*.scss', gulp.series(['styles']));
+  gulp.watch('./src/scripts/**/*.js', gulp.series(['scripts']));
+  gulp.watch('./src/pages/*.html', gulp.series(['html']));
+}]));
+
+// gulp.task('default', ['webserver']);
